@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Journey of Life</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color:aquamarine;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            color: #094e0b;
+            font-size: 3em;
+        }
+
+        p {
+            margin: 20px 0;
+            color: #333;
+            font-size: 1.2em;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        .tree {
+            margin: 90px auto;
+            width: 200px;
+            height: 300px;
+            position: relative;
+        }
+
+        .trunk {
+            background-color: #8b4513;
+            width: 40px;
+            height: 120px;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+
+        .branches {
+            position: absolute;
+            top: -30px;
+            width: 100%;
+        }
+
+        .branch {
+            background-color: #8b4513;
+            height: 100px;
+            width: 20px;
+            border-radius: 5px;
+            position: absolute;
+        }
+
+        .branch.left {
+            transform: rotate(45deg);
+            left: -30px;
+        }
+
+        .branch.right {
+            transform: rotate(-45deg);
+            right: -30px;
+        }
+
+        .leaves {
+            position: absolute;
+            top: -90px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 150px;
+            background-color: #4caf50;
+            border-radius: 50%;
+        }
+
+        .quote {
+            margin-top: 40px;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Journey of Life</h1>
+        <p>Life is a beautiful journey, filled with ups and downs. It's like a tree growing, flourishing, and facing the challenges of time.</p>
+
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="branches">
+                <div class="branch left"></div>
+                <div class="branch right"></div>
+            </div>
+            <div class="leaves"></div>
+        </div>
+
+        <p class="quote">"Life is a balance of holding on and letting go." - Rumi</p>
+    </div>
+</body>
+</html>
